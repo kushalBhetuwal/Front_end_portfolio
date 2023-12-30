@@ -22,7 +22,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    three,
   } from "../assets";
   
   export const navLinks = [
@@ -98,7 +98,7 @@ import {
     },
     {
       name: "Three JS",
-      icon: threejs,
+      icon: three,
     },
     {
       name: "git",
