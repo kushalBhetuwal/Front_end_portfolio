@@ -43,6 +43,11 @@
   );
 }
 
+.purple-gradient {
+  background:#bf61ff;
+  background: linear-gradient(135deg, #52D3D8 15%, hsl(72,100%,50%) 10%,  rgba(60, 51, 80, 0) 100% );
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);

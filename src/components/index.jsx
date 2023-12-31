@@ -7,4 +7,5 @@ export {default as Navbar} from './Navbar';
 export {default as StarsCanvas} from './StarsCanvas';
 export {default as Tech} from './Tech';
 export {default as Works} from './Works';
+export {default as ComputerCanvas} from './canvas/ComputerCanvas';
 
