@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputerCanvas } from "./";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,8 +30,25 @@ const Hero = () => {
             I am a front-end developer specializing in creating engaging,
             user-friendly websites and applications.
           </p>
-          <ComputerCanvas />
         </div>
+      </div>
+      <ComputerCanvas />
+      <div className="flex justify-center items-center xs:bottom-0 bottom-32">
+        <Link to="/about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 25, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-0"
+            />
+          </div>
+        </Link>
       </div>
     </section>
   );
