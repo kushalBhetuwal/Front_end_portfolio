@@ -5,7 +5,6 @@ import { Suspense, useEffect, useState } from "react";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./gaming_setup/scene.gltf");
-  const computer1 = useGLTF("./cyber/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -20,8 +19,8 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 1 : 44}
-        position={[2, -4.8, -2.3]}
+        scale={isMobile ? 18 : 44}
+        position={isMobile ? [4, 1, 2] : [2, -4.8, -2.3]}
         rotation={[0.04, 1.7, -0.1]}
       />
     </mesh>
@@ -30,7 +29,7 @@ const Computers = ({ isMobile }) => {
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    const mediaQuery = window.matchMedia("max-width:500");
+    const mediaQuery = window.matchMedia("(max-width:600px)");
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
@@ -51,8 +50,8 @@ const ComputerCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2.5}
-          minPolarAngle={Math.PI / 2.5}
+          maxPolarAngle={isMobile ? Math.PI / 4 : Math.PI / 2.5}
+          minPolarAngle={isMobile ? Math.PI / 4 : Math.PI / 2.5}
         />
         <Computers isMobile={isMobile} />
       </Suspense>
