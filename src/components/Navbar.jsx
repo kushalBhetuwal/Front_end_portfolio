@@ -69,7 +69,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <Link to={nav.id}>{nav.title}</Link>
+                 <Link to="/about">{nav.title}</Link>
                 </li>
               ))}
             </ul>
