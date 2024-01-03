@@ -27,5 +27,5 @@ export { default as typescript } from "./tech/typescript.png";
 
 export { default as meta } from "./company/meta.png";
 export { default as shopify } from "./company/shopify.png";
-export { default as starbucks } from "./company/starbucks.png";
+export {default as outcomex} from './company/outcomex.png';
 export { default as tesla } from "./company/tesla.png";
