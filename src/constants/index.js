@@ -140,7 +140,7 @@ const experiences = [
     ],
   },
   {
-    title: "Student(Self-Study)",
+    title: "Software Developer/Student",
     icon: meta,
     iconBg: "#9EB8D9",
     date: "September 2023 - January 2024",
