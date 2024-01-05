@@ -17,13 +17,11 @@ import {
   docker,
   meta,
   outcomex,
-  tesla,
-  shopify,
-  jobit,
-  tripguide,
+  chatgpt,
   three,
   fullstack,
-  nextapp
+  nextapp,
+  D3
 } from "../assets";
 
 export const navLinks = [
@@ -190,24 +188,68 @@ const projects = [
       {
         name: "react",
         color: "blue-text-gradient",
+        link: "https://react.dev/",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
+        link: "https://www.mongodb.com/",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
+        link: "https://tailwindcss.com",
       },
       {
-        name:"Nextjs",
-        color:"green-text-gradient"
-      }
+        name: "Nextjs",
+        color: "green-text-gradient",
+        link: "https://nextjs.org",
+      },
     ],
-    image:nextapp,
-    source_code_link: "https://github.com/",
-    live_link:"https://next-js-project-eta-sepia.vercel.app/"
+    image: nextapp,
+    source_code_link: "https://github.com/kushalBhetuwal/NextJSProject",
+    live_link: "https://next-js-project-eta-sepia.vercel.app/",
   },
+  {
+    name: "Research_GPT",
+    description: "ChatGPT created using Pure HTML, CSS and Vanilla Javascript",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+      },
+      {
+        name: "CSS3",
+        color: "blue-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        name: "Vanilla_Javascript",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+    ],
+    image: chatgpt,
+    source_code_link: "https://github.com/kushalBhetuwal/ChatGPT",
+    live_link: "https://chat-gpt-hazel-alpha.vercel.app/",
+  },
+  {
+    name: "3D_Portfolio_Design",
+    description: "Created a 3dPortFolio design using three.js and react/Fiber",
+    tags: [
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+        link: "https://threejs.org",
+      },
+      
+    ],
+    image:D3,
+    source_code_link: "https://github.com/kushalBhetuwal/kushalPortfolio3D",
+    live_link: "https://kushal-portfolio3-d.vercel.app/",
+  },
+
 
   {
     name: "User-Management App",
