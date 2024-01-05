@@ -21,7 +21,8 @@ import {
   three,
   fullstack,
   nextapp,
-  D3
+  D3,
+  Panel
 } from "../assets";
 
 export const navLinks = [
@@ -243,13 +244,30 @@ const projects = [
         color: "pink-text-gradient",
         link: "https://threejs.org",
       },
-      
     ],
-    image:D3,
+    image: D3,
     source_code_link: "https://github.com/kushalBhetuwal/kushalPortfolio3D",
     live_link: "https://kushal-portfolio3-d.vercel.app/",
   },
-
+  {
+    name: "PricingPanelDesign",
+    description:
+      "Simple CSS design",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+        link: "https://react.dev/",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+    ],
+    image: Panel,
+    source_code_link: "https://github.com/kushalBhetuwal/pricing-panel",
+  },
 
   {
     name: "User-Management App",

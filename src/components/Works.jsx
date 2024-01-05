@@ -20,12 +20,12 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 25, scale: 1, speed: 250 }}
-        className=" p-5 bg-tertiary rounded-2xl sm:w-[560px] w-full"
+        className=" p-5 bg-tertiary rounded-2xl sm:w-[360px] w-full"
       >
         <div
           className="relative w-full h-[230px] cursor-pointer "
           onClick={() => {
-            if (index === 3) {
+            if ((index===3 || index===4)) {
               alert(
                 "Please Click on GitHub Icon for this Project: 'Project Not Deployed'"
               );
