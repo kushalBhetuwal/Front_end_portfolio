@@ -19,11 +19,11 @@ import {
   outcomex,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   three,
   fullstack,
+  nextapp
 } from "../assets";
 
 export const navLinks = [
@@ -183,9 +183,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Kushal Overflow",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Front-end stack overflow which allows users to login and ask sepefic questions related to programming, this is design inspired from stackoverflow",
     tags: [
       {
         name: "react",
@@ -199,52 +199,16 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name:"Nextjs",
+        color:"green-text-gradient"
+      }
     ],
-    image: carrent,
+    image:nextapp,
     source_code_link: "https://github.com/",
+    live_link:"https://next-js-project-eta-sepia.vercel.app/"
   },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+
   {
     name: "User-Management App",
     description:
@@ -253,32 +217,37 @@ const projects = [
       {
         name: "Docker",
         color: "blue-text-gradient",
-        link:"https://www.docker.com/"
+        link: "https://www.docker.com/",
       },
       {
         name: "Prisma",
         color: "blue-text-gradient",
-        link:"https://www.prisma.io"
+        link: "https://www.prisma.io",
       },
       {
         name: "PostgreSQL",
         color: "green-text-gradient",
+        link: "https://www.postgresql.org",
       },
       {
         name: "Node.js",
         color: "green-text-gradient",
+        link: "https://nodejs.org/en",
       },
       {
         name: "Next.js",
         color: "pink-text-gradient",
+        link: "https://nextjs.org",
       },
       {
         name: "tailwindCSS",
         color: "blue-text-gradient",
+        link: "https://tailwindcss.com",
       },
       {
         name: "Typescript",
         color: "blue-text-gradient",
+        link: "https://www.typescriptlang.org",
       },
     ],
     image: fullstack,

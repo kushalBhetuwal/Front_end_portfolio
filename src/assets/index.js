@@ -1,6 +1,6 @@
 export { default as logo } from "./logo.png";
 export { default as backend } from "./backend.png";
-export { default as carrent } from "./carrent.png";
+export { default as nextapp } from "./nextjsapp.png";
 export { default as creator } from "./creator.png";
 export { default as github } from "./github.png";
 export { default as herobg } from "./herobg.png";
@@ -9,8 +9,8 @@ export { default as menu } from "./menu.svg";
 export { default as mobile } from "./mobile.png";
 export { default as tripguide } from "./tripguide.png";
 export { default as web } from "./web.png";
-export  {default as close} from './close.svg';
-export {default as fullstack} from './fullstack.png';
+export { default as close } from "./close.svg";
+export { default as fullstack } from "./fullstack.png";
 
 export { default as css } from "./tech/css.png";
 export { default as docker } from "./tech/docker.png";
@@ -28,5 +28,5 @@ export { default as typescript } from "./tech/typescript.png";
 
 export { default as meta } from "./company/meta.png";
 export { default as shopify } from "./company/shopify.png";
-export {default as outcomex} from './company/outcomex.png';
+export { default as outcomex } from "./company/outcomex.png";
 export { default as tesla } from "./company/tesla.png";
