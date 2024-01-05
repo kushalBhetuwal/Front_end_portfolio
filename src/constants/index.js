@@ -17,13 +17,11 @@ import {
   docker,
   meta,
   outcomex,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  chatgpt,
   three,
   fullstack,
+  nextapp,
+  D3
 } from "../assets";
 
 export const navLinks = [
@@ -183,68 +181,76 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Kushal Overflow",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Front-end stack overflow which allows users to login and ask sepefic questions related to programming, this is design inspired from stackoverflow",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+        link: "https://react.dev/",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
+        link: "https://www.mongodb.com/",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
+        link: "https://tailwindcss.com",
+      },
+      {
+        name: "Nextjs",
+        color: "green-text-gradient",
+        link: "https://nextjs.org",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: nextapp,
+    source_code_link: "https://github.com/kushalBhetuwal/NextJSProject",
+    live_link: "https://next-js-project-eta-sepia.vercel.app/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Research_GPT",
+    description: "ChatGPT created using Pure HTML, CSS and Vanilla Javascript",
     tags: [
       {
-        name: "react",
+        name: "HTML5",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+      },
+      {
+        name: "CSS3",
         color: "blue-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "Vanilla_Javascript",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: chatgpt,
+    source_code_link: "https://github.com/kushalBhetuwal/ChatGPT",
+    live_link: "https://chat-gpt-hazel-alpha.vercel.app/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "3D_Portfolio_Design",
+    description: "Created a 3dPortFolio design using three.js and react/Fiber",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "Three.js",
         color: "pink-text-gradient",
+        link: "https://threejs.org",
       },
+      
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image:D3,
+    source_code_link: "https://github.com/kushalBhetuwal/kushalPortfolio3D",
+    live_link: "https://kushal-portfolio3-d.vercel.app/",
   },
+
+
   {
     name: "User-Management App",
     description:
@@ -253,32 +259,37 @@ const projects = [
       {
         name: "Docker",
         color: "blue-text-gradient",
-        link:"https://www.docker.com/"
+        link: "https://www.docker.com/",
       },
       {
         name: "Prisma",
         color: "blue-text-gradient",
-        link:"https://www.prisma.io"
+        link: "https://www.prisma.io",
       },
       {
         name: "PostgreSQL",
         color: "green-text-gradient",
+        link: "https://www.postgresql.org",
       },
       {
         name: "Node.js",
         color: "green-text-gradient",
+        link: "https://nodejs.org/en",
       },
       {
         name: "Next.js",
         color: "pink-text-gradient",
+        link: "https://nextjs.org",
       },
       {
         name: "tailwindCSS",
         color: "blue-text-gradient",
+        link: "https://tailwindcss.com",
       },
       {
         name: "Typescript",
         color: "blue-text-gradient",
+        link: "https://www.typescriptlang.org",
       },
     ],
     image: fullstack,

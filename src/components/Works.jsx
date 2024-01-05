@@ -14,16 +14,30 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{ max: 35, scale: 1, speed: 250 }}
-        className=" p-5 bg-tertiary rounded-2xl sm:w-[360px] w-full"
+        options={{ max: 25, scale: 1, speed: 250 }}
+        className=" p-5 bg-tertiary rounded-2xl sm:w-[560px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="relative w-full h-[230px] cursor-pointer "
+          onClick={() => {
+            if (index === 3) {
+              alert(
+                "Please Click on GitHub Icon for this Project: 'Project Not Deployed'"
+              );
+            } else {
+              window.open(live_link, "_blank");
+            }
+          }}
+        >
           <img
             src={image}
+            width={150}
+            height={240}
             alt="project-image"
             className=" h-full w-full object-cover rounded-2xl"
           />
@@ -42,7 +56,7 @@ const ProjectCard = ({
         </div>
         <div>
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[18px]">{description}</p>
         </div>
         <div className="flex gap-4 cursor-pointer flex-wrap">
           {tags.map((tag) => (
