@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   three,
+  fullstack,
 } from "../assets";
 
 export const navLinks = [
@@ -243,6 +244,45 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "User-Management App",
+    description:
+      "This project helps the user to add the user , delete the user and update the user",
+    tags: [
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+        link:"https://www.docker.com/"
+      },
+      {
+        name: "Prisma",
+        color: "blue-text-gradient",
+        link:"https://www.prisma.io"
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindCSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: fullstack,
+    source_code_link: "https://github.com/kushalBhetuwal/fullstackapp",
   },
 ];
 
