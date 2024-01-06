@@ -21,7 +21,12 @@ import {
   three,
   fullstack,
   nextapp,
-  D3
+  D3,
+  recipe,
+  calculator,
+  commandline,
+  pet,
+  wordle,
 } from "../assets";
 
 export const navLinks = [
@@ -181,9 +186,80 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Pet Adoption App",
+    description:
+      "This application is developed using React and is designed to assist users in filtering and finding pets based on specific criteria such as location, animal type, and breed.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+        link: "https://react.dev/",
+      },
+      {
+        name: "Prettier, #Eslint, #Git, #Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Hooks, #Effects, #Custom Hooks",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        name: "React Router, #react-query, #uncontrolled forms, #class components, #error boundaries",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux, #Refs, #Context, #Portals",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: pet,
+    source_code_link: "https://github.com/kushalBhetuwal/React_working_UTH",
+    live_link: "https://react-working-uth.vercel.app/",
+  },
+  {
+    name: "Research_GPT",
+    description: "ChatGPT created using Pure HTML, CSS and Vanilla Javascript",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+      },
+      {
+        name: "CSS3",
+        color: "blue-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        name: "Vanilla_Javascript",
+        color: "orange-text-gradient",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+    ],
+    image: chatgpt,
+    source_code_link: "https://github.com/kushalBhetuwal/ChatGPT",
+    live_link: "https://chat-gpt-hazel-alpha.vercel.app/",
+  },
+  {
+    name: "Food Recipe Search",
+    description:
+      "This app calls the foodAPI and helps to search any recipe of food items",
+    tags: [
+      {
+        name: "HtML,CSS, Javascript",
+        color: "pink-text-gradient",
+        link: "",
+      },
+    ],
+    image: recipe,
+    source_code_link: "https://github.com/kushalBhetuwal/Food_recipe_search",
+    live_link: "https://kushalbhetuwal.github.io/Food_recipe_search/",
+  },
+  {
     name: "Kushal Overflow",
     description:
-      "Front-end stack overflow which allows users to login and ask sepefic questions related to programming, this is design inspired from stackoverflow",
+      "Front-end stack overflow Design. This is just a StackOverflow clone",
     tags: [
       {
         name: "react",
@@ -211,28 +287,19 @@ const projects = [
     live_link: "https://next-js-project-eta-sepia.vercel.app/",
   },
   {
-    name: "Research_GPT",
-    description: "ChatGPT created using Pure HTML, CSS and Vanilla Javascript",
+    name: "Wordle",
+    description:
+      "I have created  a Wordle which was sold for millions of dollar for New York Times",
     tags: [
       {
-        name: "HTML5",
-        color: "orange-text-gradient",
-        link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-      },
-      {
-        name: "CSS3",
-        color: "blue-text-gradient",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      },
-      {
-        name: "Vanilla_Javascript",
-        color: "orange-text-gradient",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        name: "HtMl, #CSS and  #Vanillajavascript",
+        color: "green-text-gradient",
+        link: "https://nodejs.org/en",
       },
     ],
-    image: chatgpt,
-    source_code_link: "https://github.com/kushalBhetuwal/ChatGPT",
-    live_link: "https://chat-gpt-hazel-alpha.vercel.app/",
+    image: wordle,
+    source_code_link: "https://github.com/kushalBhetuwal/NYmilliondollargame",
+    live_link: "https://kushalbhetuwal.github.io/NYmilliondollargame/",
   },
   {
     name: "3D_Portfolio_Design",
@@ -243,16 +310,34 @@ const projects = [
         color: "pink-text-gradient",
         link: "https://threejs.org",
       },
-      
     ],
-    image:D3,
+    image: D3,
     source_code_link: "https://github.com/kushalBhetuwal/kushalPortfolio3D",
     live_link: "https://kushal-portfolio3-d.vercel.app/",
   },
-
+  {
+    name: "Command_Line",
+    description:
+      "I have created a command line using Node.js and tested using Jest(Framework) for our note-taking app",
+    tags: [
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+        link: "https://nodejs.org/en",
+      },
+      {
+        name: "Jest",
+        color: "orange-text-gradient",
+        link: "https://jestjs.io/",
+      },
+    ],
+    image: commandline,
+    source_code_link: "https://github.com/kushalBhetuwal/Node_CLI_Creation",
+    live_link: "",
+  },
 
   {
-    name: "User-Management App",
+    name: "Full Stack DOCKER App",
     description:
       "This project helps the user to add the user , delete the user and update the user",
     tags: [
@@ -294,6 +379,20 @@ const projects = [
     ],
     image: fullstack,
     source_code_link: "https://github.com/kushalBhetuwal/fullstackapp",
+  },
+  {
+    name: "Caculator",
+    description: "Basic Calculator build using HtML,CSS and JavaScript",
+    tags: [
+      {
+        name: "HtML,CSS, Javascript",
+        color: "orange-text-gradient",
+        link: "",
+      },
+    ],
+    image: calculator,
+    source_code_link: "https://github.com/kushalBhetuwal/calculator",
+    live_link: "https://kushalbhetuwal.github.io/calculator/",
   },
 ];
 

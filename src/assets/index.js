@@ -13,6 +13,11 @@ export { default as close } from "./close.svg";
 export { default as fullstack } from "./fullstack.png";
 export {default as chatgpt} from './chatgpt.png';
 export {default as D3}  from "./3d.png";
+export {default as recipe} from "./recipe.png";
+export {default as calculator} from './calculator.png';
+export {default as commandline} from "./commandline.png";
+export {default as pet} from "./pet.png";
+export {default as wordle} from "./wordle.png";
 
 export { default as css } from "./tech/css.png";
 export { default as docker } from "./tech/docker.png";

@@ -20,12 +20,12 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 25, scale: 1, speed: 250 }}
-        className=" p-5 bg-tertiary rounded-2xl sm:w-[560px] w-full"
+        className=" p-4 bg-tertiary rounded-2xl sm:w-[460px] w-full"
       >
         <div
           className="relative w-full h-[230px] cursor-pointer "
           onClick={() => {
-            if (index === 3) {
+            if (( index===6 || index===7)) {
               alert(
                 "Please Click on GitHub Icon for this Project: 'Project Not Deployed'"
               );
@@ -93,7 +93,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 gap-10  flex flex-wrap justify-between">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
