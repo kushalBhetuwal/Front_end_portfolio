@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../Hoc";
 import { projects } from "../constants";
 import { github } from "../assets";
+import StarsCanvas from "./StarsCanvas";
 
 const ProjectCard = ({
   index,
@@ -25,7 +26,7 @@ const ProjectCard = ({
         <div
           className="relative w-full h-[230px] cursor-pointer "
           onClick={() => {
-            if (( index===6 || index===7)) {
+            if (index === 6 || index === 7) {
               alert(
                 "Please Click on GitHub Icon for this Project: 'Project Not Deployed'"
               );
