@@ -18,6 +18,7 @@ export {default as calculator} from './calculator.png';
 export {default as commandline} from "./commandline.png";
 export {default as pet} from "./pet.png";
 export {default as wordle} from "./wordle.png";
+export {default as cross} from "./cross.png";
 
 export { default as css } from "./tech/css.png";
 export { default as docker } from "./tech/docker.png";
