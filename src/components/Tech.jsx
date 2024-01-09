@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import BallCanvas from "./canvas/BallCanvas";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../Hoc";
 import { technologies } from "../constants";
 import { styles } from "../styles";
 import { fadeIn } from "../utils/motion";
